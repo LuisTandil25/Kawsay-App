@@ -1,0 +1,7 @@
+{
+  "name": "Kawsay Grow Master",
+  "description": "Una aplicación avanzada para cultivadores de cannabis basada en el método de fibra de coco de J Kawsay, con seguimiento de cultivos, calendario de nutrición y asistente IA.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
