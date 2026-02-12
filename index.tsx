@@ -15,11 +15,16 @@ root.render(
   </React.StrictMode>
 );
 
-// Register Service Worker for PWA
+// Registro de Service Worker para PWA (Crucial para Bubblewrap)
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
+    // Usamos ./sw.js para asegurar que cargue correctamente en sub-rutas de GitHub Pages
     navigator.serviceWorker.register('./sw.js')
-      .then(reg => console.log('Service Worker registrado', reg))
-      .catch(err => console.error('Error al registrar Service Worker', err));
+      .then(reg => {
+        console.log('Kawsay PWA: Service Worker activo con éxito en el scope:', reg.scope);
+      })
+      .catch(err => {
+        console.error('Kawsay PWA: Error en el registro del SW:', err);
+      });
   });
 }

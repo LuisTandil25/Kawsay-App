@@ -2,12 +2,14 @@
 {
   "name": "Kawsay Grow Master",
   "short_name": "Kawsay",
-  "description": "App para cultivadores de cannabis basada en el método J Kawsay",
+  "description": "Guía y seguimiento profesional para cultivadores de cannabis en fibra de coco.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#10b981",
   "orientation": "portrait",
+  "scope": "./",
+  "categories": ["lifestyle", "utilities"],
   "icons": [
     {
       "src": "https://cdn-icons-png.flaticon.com/512/3209/3209149.png",
@@ -18,7 +20,8 @@
     {
       "src": "https://cdn-icons-png.flaticon.com/512/3209/3209149.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }
